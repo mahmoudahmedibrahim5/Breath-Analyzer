@@ -9,12 +9,13 @@
 */
 
 #include "main.h"
+#include "ssd1306.h"
 
 void delay(uint32_t nTime)
 {
 		while(nTime--);
 }
-
+I2C_HandleTypeDef test;
 int main(void)
 {
 	__HAL_RCC_GPIOA_CLK_ENABLE();
@@ -29,7 +30,7 @@ int main(void)
 	
 	HAL_GPIO_Init(GPIOA, &led);
 	
-	I2C_HandleTypeDef test;
+	
 	test.Instance = I2C1;
 	test.Init.ClockSpeed = 400000;
 	test.Init.DutyCycle = I2C_DUTYCYCLE_2;
@@ -38,12 +39,15 @@ int main(void)
 	test.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 	
 	HAL_I2C_Init(&test);
-	
-	uint8_t data[6] = "Hello\n";
+	delay(0x3FFFF);
+		SSD1306_Init();
+		SSD1306_Clear();
+		SSD1306_GotoXY(24, 25);
+		SSD1306_Puts("Saba7o", &Font_11x18, SSD1306_COLOR_WHITE);
+		SSD1306_UpdateScreen();
 	while(1)
 	{
 		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
-		HAL_I2C_Master_Transmit(&test, 0x78, data, 6, 5000);
 		delay(0x3FFFF);
   }
 }

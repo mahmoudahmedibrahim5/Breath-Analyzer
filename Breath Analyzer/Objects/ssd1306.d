@@ -1,4 +1,4 @@
-./objects/main.o: Src\main.c Inc\main.h \
+./objects/ssd1306.o: Src\ssd1306.c Inc\ssd1306.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h Inc\py32f0xx_hal_conf.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rcc.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_def.h \
@@ -13,5 +13,4 @@
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h \
-  Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h Inc\ssd1306.h \
-  Inc\fonts.h
+  Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h Inc\fonts.h

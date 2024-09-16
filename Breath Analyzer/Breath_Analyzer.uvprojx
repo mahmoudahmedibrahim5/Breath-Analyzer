@@ -399,6 +399,16 @@
               <FileType>1</FileType>
               <FilePath>.\Src\py32f0xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\ssd1306.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -893,6 +903,16 @@
               <FileName>py32f0xx_it.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Inc\py32f0xx_it.h</FilePath>
+            </File>
+            <File>
+              <FileName>fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Inc\fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Inc\ssd1306.h</FilePath>
             </File>
           </Files>
         </Group>
