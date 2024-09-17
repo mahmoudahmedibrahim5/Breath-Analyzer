@@ -40,10 +40,24 @@ void HAL_MspInit(void)
   __HAL_RCC_PWR_CLK_ENABLE();
 }
 
+void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+{
+		if(hadc->Instance == ADC1)
+			__HAL_RCC_ADC_CLK_ENABLE();
+		
+		GPIO_InitTypeDef pin;
+		pin.Mode = GPIO_MODE_ANALOG;
+		pin.Pin = 6;
+		pin.Pull = GPIO_NOPULL;
+		
+		HAL_GPIO_Init(GPIOA, &pin);
+}
+
 void HAL_I2C_MspInit(I2C_HandleTypeDef *hi2c)
 {
 	if(hi2c->Instance ==  I2C1)
 		__HAL_RCC_I2C_CLK_ENABLE();
+	
 	GPIO_InitTypeDef pin;
 	pin.Mode = GPIO_MODE_AF_OD;
 	pin.Pin = GPIO_PIN_0;

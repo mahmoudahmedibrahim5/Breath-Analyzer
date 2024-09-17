@@ -19,7 +19,7 @@ void GPIO_voidInit(void);
 void ADC_voidInit(void);
 void I2C_voidInit(void);
 
-
+void Screen_showPotValue(uint32_t val);
 
 #endif /* __MAIN_H */
 
