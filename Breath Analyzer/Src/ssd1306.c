@@ -22,7 +22,7 @@
  */
 #include "ssd1306.h"
 
-extern I2C_HandleTypeDef test;
+extern I2C_HandleTypeDef screen;
 /* Write command */
 #define SSD1306_WRITECOMMAND(command)      ssd1306_I2C_Write(SSD1306_I2C_ADDR, 0x00, (command))
 /* Write data */
@@ -189,7 +189,7 @@ uint8_t SSD1306_Init(void) {
 	ssd1306_I2C_Init();
 
 	/* Check if LCD connected to I2C */
-	if (HAL_I2C_IsDeviceReady(&test, SSD1306_I2C_ADDR, 1, 20000) != HAL_OK) {
+	if (HAL_I2C_IsDeviceReady(&screen, SSD1306_I2C_ADDR, 1, 20000) != HAL_OK) {
 		/* Return false */
 		return 0;
 	}
@@ -596,10 +596,12 @@ void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h
 	SSD1306_DrawArc(x + w - r, y + h - r, r, 4, c);		// Fourth quadrant
 }
 
+/*
 void SSD1306_DrawRoundedRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c)
 {
 
 }
+*/
 
 void SSD1306_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c) {
 	uint8_t i;
@@ -897,7 +899,7 @@ void ssd1306_I2C_Init() {
 	uint32_t p = 250000;
 	while(p>0)
 		p--;
-	//HAL_I2C_DeInit(&test);
+	//HAL_I2C_DeInit(&screen);
 	//p = 250000;
 	//while(p>0)
 	//	p--;
@@ -910,7 +912,7 @@ dt[0] = reg;
 uint8_t i;
 for(i = 0; i < count; i++)
 dt[i+1] = data[i];
-HAL_I2C_Master_Transmit(&test, address, dt, count+1, 10);
+HAL_I2C_Master_Transmit(&screen, address, dt, count+1, 10);
 }
 
 
@@ -918,5 +920,5 @@ void ssd1306_I2C_Write(uint8_t address, uint8_t reg, uint8_t data) {
 	uint8_t dt[2];
 	dt[0] = reg;
 	dt[1] = data;
-	HAL_I2C_Master_Transmit(&test, address, dt, 2, 10);
+	HAL_I2C_Master_Transmit(&screen, address, dt, 2, 10);
 }

@@ -11,6 +11,8 @@
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_gpio.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_gpio_ex.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_cortex.h \
+  Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_adc.h \
+  Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_adc_ex.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h \
   Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h \

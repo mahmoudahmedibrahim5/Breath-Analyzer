@@ -176,7 +176,7 @@ void SSD1306_DrawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD13
 void SSD1306_DrawRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c);
 
 void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c);
-void SSD1306_DrawRoundedRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c);
+//void SSD1306_DrawRoundedRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c);
 
 /**
  * @brief  Draws filled rectangle on LCD

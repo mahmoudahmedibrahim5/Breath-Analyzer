@@ -450,29 +450,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_def.h</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_dma.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_dma.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_dma_ex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_dma_ex.h</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_exti.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_exti.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_flash.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_flash_ex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash_ex.h</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_gpio.h</FileName>
@@ -490,24 +470,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_irda.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_irda.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_iwdg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_iwdg.h</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_led.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_led.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_lptim.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_lptim.h</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_pwr.h</FileName>
@@ -520,34 +485,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rcc.h</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_rcc_ex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rcc_ex.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_rtc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rtc.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_rtc_ex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rtc_ex.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_spi.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_spi.h</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_tim.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_tim.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_tim_ex.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_tim_ex.h</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_uart.h</FileName>
@@ -558,11 +498,6 @@
               <FileName>py32f0xx_hal_usart.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_wwdg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_wwdg.h</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_ll_adc.h</FileName>
@@ -660,11 +595,6 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_usart.h</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_ll_utils.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_utils.h</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_ll_wwdg.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_wwdg.h</FilePath>
@@ -705,19 +635,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_crc.c</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_dma.c</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_exti.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_flash.c</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_gpio.c</FileName>
@@ -730,24 +650,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_i2c.c</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_irda.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_irda.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_iwdg.c</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_lptim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_lptim.c</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_pwr.c</FileName>
@@ -760,34 +665,9 @@
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_rcc.c</FilePath>
             </File>
             <File>
-              <FileName>py32f0xx_hal_rcc_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_rcc_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_rtc.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_rtc_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_rtc_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_spi.c</FilePath>
-            </File>
-            <File>
               <FileName>py32f0xx_hal_tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_tim.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_tim_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_hal_uart.c</FileName>
@@ -798,11 +678,6 @@
               <FileName>py32f0xx_hal_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_hal_wwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_hal_wwdg.c</FilePath>
             </File>
             <File>
               <FileName>py32f0xx_ll_adc.c</FileName>
@@ -878,11 +753,6 @@
               <FileName>py32f0xx_ll_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_ll_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>py32f0xx_ll_utils.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_ll_utils.c</FilePath>
             </File>
           </Files>
         </Group>
