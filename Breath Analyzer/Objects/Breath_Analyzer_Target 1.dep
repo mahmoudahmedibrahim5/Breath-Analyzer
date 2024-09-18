@@ -1,6 +1,6 @@
 Dependencies for Project 'Breath_Analyzer', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6220000::V6.22::ARMCLANG
-F (.\Src\main.c)(0x66E98F4A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/main.o -MMD)
+F (.\Src\main.c)(0x66EA4A29)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/main.o -MMD)
 I (Inc\main.h)(0x66E98B06)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)
 I (Inc\py32f0xx_hal_conf.h)(0x66E92BD3)
@@ -20,8 +20,8 @@ I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h)(0x636B96E8)
-I (Inc\ssd1306.h)(0x66E93239)
-I (Inc\fonts.h)(0x66E8BAC2)
+I (Inc\ssd1306.h)(0x66EA49DD)
+I (Inc\fonts.h)(0x66EA49F5)
 F (.\Src\py32f0xx_hal_msp.c)(0x66E98346)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/py32f0xx_hal_msp.o -MMD)
 I (Inc\main.h)(0x66E98B06)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)
@@ -42,8 +42,8 @@ I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h)(0x636B96E8)
-I (Inc\ssd1306.h)(0x66E93239)
-I (Inc\fonts.h)(0x66E8BAC2)
+I (Inc\ssd1306.h)(0x66EA49DD)
+I (Inc\fonts.h)(0x66EA49F5)
 F (.\Src\py32f0xx_it.c)(0x636B96E8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/py32f0xx_it.o -MMD)
 I (Inc\main.h)(0x66E98B06)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)
@@ -64,11 +64,11 @@ I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h)(0x636B96E8)
-I (Inc\ssd1306.h)(0x66E93239)
-I (Inc\fonts.h)(0x66E8BAC2)
+I (Inc\ssd1306.h)(0x66EA49DD)
+I (Inc\fonts.h)(0x66EA49F5)
 I (Inc\py32f0xx_it.h)(0x636B96E8)
-F (.\Src\fonts.c)(0x668A8408)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/fonts.o -MMD)
-I (Inc\fonts.h)(0x66E8BAC2)
+F (.\Src\fonts.c)(0x66EA4A09)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/fonts.o -MMD)
+I (Inc\fonts.h)(0x66EA49F5)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)
 I (Inc\py32f0xx_hal_conf.h)(0x66E92BD3)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rcc.h)(0x636B96E8)
@@ -87,8 +87,8 @@ I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h)(0x636B96E8)
-F (.\Src\ssd1306.c)(0x66E93245)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/ssd1306.o -MMD)
-I (Inc\ssd1306.h)(0x66E93239)
+F (.\Src\ssd1306.c)(0x66EA49AF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/ssd1306.o -MMD)
+I (Inc\ssd1306.h)(0x66EA49DD)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)
 I (Inc\py32f0xx_hal_conf.h)(0x66E92BD3)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_rcc.h)(0x636B96E8)
@@ -107,7 +107,7 @@ I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_flash.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_i2c.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_pwr.h)(0x636B96E8)
 I (Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_usart.h)(0x636B96E8)
-I (Inc\fonts.h)(0x66E8BAC2)
+I (Inc\fonts.h)(0x66EA49F5)
 F (.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal.h)(0x636B96E8)()
 F (.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_adc.h)(0x636B96E8)()
 F (.\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_hal_adc_ex.h)(0x636B96E8)()
@@ -448,8 +448,8 @@ F (.\Drivers\PY32F0xx_HAL_Driver\Src\py32f0xx_ll_usart.c)(0x636B96E8)(-xc -std=c
 F (.\Inc\main.h)(0x66E98B06)()
 F (.\Inc\py32f0xx_hal_conf.h)(0x66E92BD3)()
 F (.\Inc\py32f0xx_it.h)(0x636B96E8)()
-F (.\Inc\fonts.h)(0x66E8BAC2)()
-F (.\Inc\ssd1306.h)(0x66E93239)()
+F (.\Inc\fonts.h)(0x66EA49F5)()
+F (.\Inc\ssd1306.h)(0x66EA49DD)()
 F (RTE/Device/PY32F002Ax5/startup_py32f002ax5.s)(0x66C46FC7)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 540" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_py32f002ax5.o)
 F (RTE/Device/PY32F002Ax5/system_py32f0xx.c)(0x66C46FC7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./Drivers/PY32F0xx_HAL_Driver/Inc-I./RTE/_Target_1-IC:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/ADMIN/AppData/Local/Arm/Packs/Puya/PY32F0xx_DFP/1.2.1/Drivers/CMSIS/Device/PY32F0xx/Include-D__UVISION_VERSION="540" -D_RTE_ -DUSE_HAL_DRIVER -DPY32F002Ax5-o ./objects/system_py32f0xx.o -MMD)
 I (C:\Users\ADMIN\AppData\Local\Arm\Packs\Puya\PY32F0xx_DFP\1.2.1\Drivers\CMSIS\Device\PY32F0xx\Include\py32f0xx.h)(0x66C46FC7)

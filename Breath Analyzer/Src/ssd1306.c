@@ -154,33 +154,6 @@ void SSD1306_DrawBitmap(int16_t x, int16_t y, const unsigned char* bitmap, int16
     }
 }
 
-void SSD1306_DrawBitmap_rotated(int16_t x, int16_t y, const unsigned char* bitmap, int16_t w, int16_t h, uint16_t color)
-{
-
-    int16_t byteWidth = (w + 7) / 8; // Bitmap scanline pad = whole byte
-    uint8_t byte = 0;
-
-    y += w;
-    for(int16_t j=0; j<h; j++, x++)
-    {
-        for(int16_t i=0; i<w; i++)
-        {
-            if(i & 7)
-            {
-               byte <<= 1;
-            }
-            else
-            {
-               byte = (*(const unsigned char *)(&bitmap[j * byteWidth + i / 8]));
-            }
-            if(byte & 0x80) SSD1306_DrawPixel(x, y-i, color);
-        }
-    }
-}
-
-
-
-
 
 
 uint8_t SSD1306_Init(void) {
@@ -307,12 +280,6 @@ void SSD1306_GotoXY(uint16_t x, uint16_t y) {
 	SSD1306.CurrentY = y;
 }
 
-void SSD1306_GotoXY_rotated(uint16_t x, uint16_t y) {
-	/* Set write pointers */
-	SSD1306.CurrentX = y;
-	SSD1306.CurrentY = 63 - x;
-}
-
 char SSD1306_Putc(char ch, FontDef_t* Font, SSD1306_COLOR_t color) {
 	uint32_t i, b, j;
 
@@ -344,56 +311,6 @@ char SSD1306_Putc(char ch, FontDef_t* Font, SSD1306_COLOR_t color) {
 	return ch;
 }
 
-char SSD1306_Putc_rotated(char ch, FontDef_t* Font, SSD1306_COLOR_t color)
-{
-	uint32_t i, b, j;
-
-	/* Check available space in LCD */
-	if (
-		SSD1306_WIDTH <= (SSD1306.CurrentX + Font->FontHeight) ||
-		(SSD1306.CurrentY - Font->FontWidth) < 0
-	) {
-		/* Error */
-		return 0;
-	}
-
-	/*uint16_t tmp;
-	if(Font->FontWidth == 6)
-		tmp = 0x0400;
-	else if(Font->FontWidth == 7)
-		tmp = 0x0200;
-	else if(Font->FontWidth == 11)
-		tmp = 0x0020;
-	else if(Font->FontWidth == 16)
-		tmp = 0x0001;
-	 Go through font
-	for (i = 0; i < Font->FontHeight; i++) {
-		b = Font->data[(ch - 32) * Font->FontHeight + i];
-		for (j = 0; j < Font->FontWidth; j++) {
-			if ((b >> j) & tmp) {
-				SSD1306_DrawPixel(SSD1306.CurrentX + i, (SSD1306.CurrentY + j), (SSD1306_COLOR_t) color);
-			} else {
-				SSD1306_DrawPixel(SSD1306.CurrentX + i, (SSD1306.CurrentY + j), (SSD1306_COLOR_t)!color);
-			}
-		}
-	}*/
-	for (i = 0; i < Font->FontHeight; i++) {
-		b = Font->data[(ch - 32) * Font->FontHeight + i];
-		for (j = 0; j < Font->FontWidth; j++) {
-			if ((b << j) & 0x8000) {
-				SSD1306_DrawPixel(SSD1306.CurrentX + i, (SSD1306.CurrentY - j), (SSD1306_COLOR_t) color);
-			} else {
-				SSD1306_DrawPixel(SSD1306.CurrentX + i, (SSD1306.CurrentY - j), (SSD1306_COLOR_t)!color);
-			}
-		}
-	}
-	/* Increase pointer */
-	SSD1306.CurrentY -= Font->FontWidth;
-
-	/* Return character written */
-	return ch;
-}
-
 char SSD1306_Puts(char* str, FontDef_t* Font, SSD1306_COLOR_t color) {
 	/* Write characters */
 	while (*str) {
@@ -411,23 +328,6 @@ char SSD1306_Puts(char* str, FontDef_t* Font, SSD1306_COLOR_t color) {
 	return *str;
 }
 
-char SSD1306_Puts_rotated(char* str, FontDef_t* Font, SSD1306_COLOR_t color)
-{
-	/* Write characters */
-	while (*str) {
-		/* Write character by character */
-		if (SSD1306_Putc_rotated(*str, Font, color) != *str) {
-			/* Return error */
-			return *str;
-		}
-
-		/* Increase string pointer */
-		str++;
-	}
-
-	/* Everything OK, zero should be returned */
-	return *str;
-}
 
 void SSD1306_DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, SSD1306_COLOR_t c) {
 	int16_t dx, dy, sx, sy, err, e2, i, tmp;
@@ -538,31 +438,7 @@ void SSD1306_DrawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD13
 	SSD1306_DrawLine(x + w, y, x + w, y + h, c); /* Right line */
 }
 
-void SSD1306_DrawRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c)
-{
-	/* Check input parameters */
-	if (
-		y >= SSD1306_WIDTH ||
-		x >= SSD1306_HEIGHT
-	) {
-		/* Return error */
-		return;
-	}
 
-	/* Check width and height */
-	if ((x + w) >= SSD1306_HEIGHT) {
-		w = SSD1306_HEIGHT - x;
-	}
-	if ((y + h) >= SSD1306_WIDTH) {
-		h = SSD1306_HEIGHT - y;
-	}
-
-	/* Draw 4 lines */
-	SSD1306_DrawLine(y, 63 - x, y, 63 - x - w, c);         	/* Top line */
-	SSD1306_DrawLine(y + h, 63 - x, y + h, 63 - x - w, c); 	/* Bottom line */
-	SSD1306_DrawLine(y, 63 - x, y + h, 63 - x, c);         	/* Left line */
-	SSD1306_DrawLine(y, 63 - x - w, y + h , 63 - x - w, c); /* Right line */
-}
 
 void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c)
 {
@@ -596,13 +472,6 @@ void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h
 	SSD1306_DrawArc(x + w - r, y + h - r, r, 4, c);		// Fourth quadrant
 }
 
-/*
-void SSD1306_DrawRoundedRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c)
-{
-
-}
-*/
-
 void SSD1306_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c) {
 	uint8_t i;
 
@@ -627,33 +496,6 @@ void SSD1306_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h,
 	for (i = 0; i <= h; i++) {
 		/* Draw lines */
 		SSD1306_DrawLine(x, y + i, x + w, y + i, c);
-	}
-}
-
-void SSD1306_DrawFilledRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c) {
-	uint8_t i;
-
-	/* Check input parameters */
-	if (
-		y >= SSD1306_WIDTH ||
-		x >= SSD1306_HEIGHT
-	) {
-		/* Return error */
-		return;
-	}
-
-	/* Check width and height */
-	if ((x + w) >= SSD1306_HEIGHT) {
-		w = SSD1306_HEIGHT - x;
-	}
-	if ((y + h) >= SSD1306_WIDTH) {
-		h = SSD1306_HEIGHT - y;
-	}
-
-	/* Draw lines */
-	for (i = 0; i <= h; i++) {
-		/* Draw lines */
-		SSD1306_DrawLine(y + i, 63 - x, y + i, 63- x - w, c);
 	}
 }
 

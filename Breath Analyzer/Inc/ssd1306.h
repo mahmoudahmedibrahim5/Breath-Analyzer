@@ -129,7 +129,7 @@ void SSD1306_DrawPixel(uint16_t x, uint16_t y, SSD1306_COLOR_t color);
  * @retval None
  */
 void SSD1306_GotoXY(uint16_t x, uint16_t y);
-void SSD1306_GotoXY_rotated(uint16_t x, uint16_t y);
+
 /**
  * @brief  Puts character to internal RAM
  * @note   @ref SSD1306_UpdateScreen() must be called after that in order to see updated LCD screen
@@ -139,7 +139,7 @@ void SSD1306_GotoXY_rotated(uint16_t x, uint16_t y);
  * @retval Character written
  */
 char SSD1306_Putc(char ch, FontDef_t* Font, SSD1306_COLOR_t color);
-char SSD1306_Putc_rotated(char ch, FontDef_t* Font, SSD1306_COLOR_t color);
+
 /**
  * @brief  Puts string to internal RAM
  * @note   @ref SSD1306_UpdateScreen() must be called after that in order to see updated LCD screen
@@ -149,7 +149,7 @@ char SSD1306_Putc_rotated(char ch, FontDef_t* Font, SSD1306_COLOR_t color);
  * @retval Zero on success or character value when function failed
  */
 char SSD1306_Puts(char* str, FontDef_t* Font, SSD1306_COLOR_t color);
-char SSD1306_Puts_rotated(char* str, FontDef_t* Font, SSD1306_COLOR_t color);
+
 /**
  * @brief  Draws line on LCD
  * @note   @ref SSD1306_UpdateScreen() must be called after that in order to see updated LCD screen
@@ -173,10 +173,9 @@ void SSD1306_DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, SSD130
  * @retval None
  */
 void SSD1306_DrawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c);
-void SSD1306_DrawRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c);
+
 
 void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c);
-//void SSD1306_DrawRoundedRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t r, SSD1306_COLOR_t c);
 
 /**
  * @brief  Draws filled rectangle on LCD
@@ -189,7 +188,7 @@ void SSD1306_DrawRoundedRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h
  * @retval None
  */
 void SSD1306_DrawFilledRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c);
-void SSD1306_DrawFilledRectangle_rotated(uint16_t x, uint16_t y, uint16_t w, uint16_t h, SSD1306_COLOR_t c);
+
 
 /**
  * @brief  Draws triangle on LCD
@@ -284,7 +283,6 @@ void ssd1306_I2C_WriteMulti(uint8_t address, uint8_t reg, uint8_t *data, uint16_
  * @param  color : 1-> white/blue, 0-> black
  */
 void SSD1306_DrawBitmap(int16_t x, int16_t y, const unsigned char* bitmap, int16_t w, int16_t h, uint16_t color);
-void SSD1306_DrawBitmap_rotated(int16_t x, int16_t y, const unsigned char* bitmap, int16_t w, int16_t h, uint16_t color);
 
 // scroll the screen for fixed rows
 

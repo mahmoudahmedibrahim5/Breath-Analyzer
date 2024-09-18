@@ -26,27 +26,13 @@ int main(void)
 	SSD1306_Init();
 	SSD1306_Clear();
 	
-	/* Example Print */
-	SSD1306_GotoXY(24, 25);
-	SSD1306_Puts("Saba7o", &Font_11x18, SSD1306_COLOR_WHITE);
-	SSD1306_UpdateScreen();
-	HAL_Delay(3000);
-	SSD1306_Clear();
-	
 	uint32_t sensorVal = 10;
 	while(1)
 	{
 		HAL_ADC_Start(&sensor);
 		sensorVal = HAL_ADC_GetValue(&sensor);
 		Screen_showPotValue(sensorVal);
-		
-		if(sensorVal > 2048)
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 0);
-		else
-			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, 1);
-		
 		HAL_Delay(100);
-		
   }
 }
 
